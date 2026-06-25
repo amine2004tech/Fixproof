@@ -2,7 +2,9 @@
 
 **A modern, localhost-only offensive validation and retest toolkit for developers.**
 
-FixProof is designed to help developers identify, validate, and definitively fix security vulnerabilities in their local web applications. Unlike traditional DAST tools that blindly spray payloads, FixProof meticulously maps the attack surface, intelligently detects vulnerabilities with context-aware analysis, and allows you to **replay the exact same payloads** after you've written a fix to prove the issue is resolved.
+FixProof is designed to help developers identify, validate, and definitively fix security vulnerabilities in their local web applications. While capable of scanning any local HTTP server, **FixProof's preflight and analysis engines are specifically optimized for Node.js and Express.js applications** (e.g., automatically analyzing `package.json`, `.env` files, and `NODE_ENV` settings).
+
+Unlike traditional DAST tools that blindly spray payloads, FixProof meticulously maps the attack surface, intelligently detects vulnerabilities with context-aware analysis, and allows you to **replay the exact same payloads** after you've written a fix to prove the issue is resolved.
 
 ---
 
